@@ -10,21 +10,21 @@ from .serializers import (
 from .permissions import IsOwner
 
 
-# -------- AUTH --------
+
 
 class RegisterView(generics.CreateAPIView):
     queryset = User.objects.all()
     serializer_class = RegisterSerializer
 
 
-# -------- GAMES (PÚBLICO) --------
+
 
 class GameList(generics.ListAPIView):
     queryset = Game.objects.all()
     serializer_class = GameSerializer
 
 
-# -------- SQUADS (PROTEGIDO) --------
+
 
 class SquadListCreate(generics.ListCreateAPIView):
     serializer_class = SquadRequestSerializer
