@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Squad Finder</title>
+
+    <!-- BOOTSTRAP 5.3.8 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+          crossorigin="anonymous">
+</head>
+
+<body class="bg-light">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="/">SquadFinder</a>
+    </div>
+</nav>
+
+<div class="container mt-5">
+    <div class="card shadow">
+        <div class="card-body">
+            <h1 class="card-title">Backend Squad Finder</h1>
+            <p class="card-text">
+                Navegación rápida para la evaluación.
+            </p>
+
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <a href="/api/games/" target="_blank">📌 Ver juegos (API pública)</a>
+                </li>
+                <li class="list-group-item">
+                    <a href="/api/squads/" target="_blank">🔒 Ver squads (requiere token)</a>
+                </li>
+                <li class="list-group-item">
+                    <a href="/api/auth/register/" target="_blank">👤 Registrar usuario</a>
+                </li>
+                <li class="list-group-item">
+                    <a href="/api/auth/login/" target="_blank">🔑 Login (JWT)</a>
+                </li>
+                <li class="list-group-item">
+                    <a href="/admin/" target="_blank">⚙️ Admin Django</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
